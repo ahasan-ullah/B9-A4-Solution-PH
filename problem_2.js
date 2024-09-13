@@ -4,13 +4,14 @@ function checkName(name){
   }
   //name[name.length - 1]
   let lastLetter=name.slice(-1).toLowerCase();
-  let result=false;
+  // let result=false;
   let checkArray=['a','y','i','e','o','u'];
-  for(const char of checkArray){
-    if(char===lastLetter){
-      result=true;
-    }
-  }
+  // for(const char of checkArray){
+  //   if(char===lastLetter){
+  //     result=true;
+  //   }
+  // }
+  let result=checkArray.includes(lastLetter);
   return result?"Good Name":"Bad Name";
 }
 
